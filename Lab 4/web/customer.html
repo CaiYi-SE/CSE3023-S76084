@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Customer</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Use JSP Scriptlet and JSP Expression in Application</h1>
+            <div class="card"> 
+                <div class="form-title">Customer Discount</div>
+                <form class="form-group" action="processCustomer.jsp" method="post">
+                    <label>Customer Code</label>
+                    <input type="text" placeholder="Key-in customer code" name="customerCode" id="customerCode">
+                    
+                    <label>Quantity</label>
+                    <input type="number" name="quantity" placeholder="Key-in quantity" min="0">
+                    
+                    <label>Customer Type</label>
+                    <div class="radio-group">
+                        <input type="radio" id="normalCustomer" value="1" name="customerType">
+                        <label class="radio-label" for="normalCustomer">Normal Customer</label>
+                        <input type="radio" id="privilegeCustomer" value="2" name="customerType">
+                        <label class="radio-label" for="privilegeCustomer">Privilege Customer</label>
+                    </div>
+                    <div class="button-group">
+                        <button class="btn btn-submit" type="submit">Submit</button>
+                        <button class="btn btn-cancel" type="reset">Cancel</button>
+                    </div> 
+                    
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
